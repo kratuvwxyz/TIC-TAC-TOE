@@ -2,6 +2,7 @@ table {
     margin: 20px auto;
     border-radius: 10px;
     color: white;
+    border-collapse: separate !important;
 }
 
 td {
@@ -11,6 +12,7 @@ td {
     font-size: 60px;
     text-align: center;
     border-radius: 10px ;
+
 }
 
 .player1, .player2 {
