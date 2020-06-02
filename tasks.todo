@@ -1,0 +1,11 @@
+Need to fix:
+    ☐ when it's a tie, remove winner plays first
+    ☐ subsection, add capitalize first letter of name
+    ☐ add background image/pattern
+    ☐ imporove prompt question with asking to select 'X' or 'O'
+    ☐ add design loader
+    ☐ remove prompt and ask actual question
+    ☐ add text-shaddow
+    ☐ add media query for bigger size screen
+        ☐ change box size
+        ☐ change font size
