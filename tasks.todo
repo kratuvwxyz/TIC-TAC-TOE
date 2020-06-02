@@ -2,10 +2,12 @@ Need to fix:
     ☐ when it's a tie, remove winner plays first
     ☐ subsection, add capitalize first letter of name
     ☐ add background image/pattern
-    ☐ imporove prompt question with asking to select 'X' or 'O'
-    ☐ add design loader
-    ☐ remove prompt and ask actual question
-    ☐ add text-shaddow
-    ☐ add media query for bigger size screen
-        ☐ change box size
-        ☐ change font size
+    ✔ imporove prompt question with asking to select 'X' or 'O' @done (6/2/2020, 12:02:06 PM)
+    ✔ add design loader @done (6/2/2020, 12:02:09 PM)
+    ✔ remove prompt and ask actual question @done (6/2/2020, 12:02:23 PM)
+    ✔ add text-shaddow @done (6/2/2020, 12:02:26 PM)
+    ✔ add media query for bigger size screen @done (6/2/2020, 12:02:31 PM)
+        ✔ change box size @done (6/2/2020, 12:02:33 PM)
+        ✔ change font size @done (6/2/2020, 12:02:35 PM)
+    ☐ add auto select input when it shows
+    ☐ add padding in input
