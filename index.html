@@ -15,37 +15,38 @@
     <!-- Style CSS -->
     <link rel="stylesheet" href="./style.css">
 
-    <!-- script to start before loading
-    <script>
-        alert('Welcome to Tic-Tac-Toe!');
-    </script> -->
 </head>
 
 <body class="text-center">
     <div id="loader-wrapper">
         <img src="./logo.svg" width="80%" />
     </div>
-    <div id="intro-text text-center">
-        <h5>Welcome To World Famous</h5>
-        <h1 class="display-4 text-monospace"><a href="index.html">TIC TAC TOE</a></h1>
-        <button class="btn btn-danger btn-large">Let's Play</button>
+    <div id="intro-text">
+        <div class="centerMiddle">
+            <h5 class="text-muted">Welcome To World Famous</h5>
+            <h1 class="display-4 text-monospace"><a href="index.html" class="text-warning text-decoration-none">TIC TAC
+                    TOE</a></h1>
+            <button class="btn btn-danger btn-large" onclick="letsPlay()">Let's Play</button>
+        </div>
+
     </div>
-    <div>
+    <div class="centerMiddle">
         <div class="hidePlayerOne">
-            <label for="playerOne">Enter Player One Name for <strong>X</strong>:</label>
-            <input type="text" name="playerOne" id="playerOne">
-            <button class="btn btn-info btn-small next">Next</button>
+            <label for="playerOne">Enter Player One Name for <strong>X</strong>:</label><br>
+            <input type="text" name="playerOne" id="playerOne" required><br>
+            <button class="btn btn-outline-info mt-3 nextPlayerTwo">Next ></button>
         </div>
         <div class="hidePlayerTwo">
-            <label for="playerTwo">Enter Player Two Name for <strong>O</strong>:</label>
-            <input type="text" name="playerTwo" id="playerTwo">
-            <button class="btn btn-info btn-small next">Next</button>
+            <label for="playerTwo">Enter Player Two Name for <strong>O</strong>:</label><br>
+            <input type="text" name="playerTwo" id="playerTwo" required><br>
+            <button class="btn btn-outline-info mt-3 nextShowGame">Next</button>
         </div>
 
         <div class="hideGame">
 
+
             <h5 id="player">Let's Play!</h5>
-    
+
             <table>
                 <tbody>
                     <tr>
@@ -65,18 +66,18 @@
                     </tr>
                 </tbody>
             </table>
-    
+
             <div class="d-flex justify-content-center text-monospace">
                 <div class="flex-column m-3">
-                    <span class="text-center player1">Player 1</span>: <span class="text-danger">X</span>
+                    <span class="text-center player1Name">Player 1</span>: <span class="text-danger">X</span>
                     <br><b>Score: <span id="x" class="text-danger">0</span></b>
                 </div>
                 <div class="flex-column m-3">
-                    <span class="text-center player2">Player 2</span>: <span class="text-danger">O</span>
+                    <span class="text-center player2Name">Player 2</span>: <span class="text-danger">O</span>
                     <br><b>Score: <span id="o" class="text-danger">0</span></b>
                 </div>
             </div>
-            
+
         </div>
 
     </div>
@@ -89,12 +90,23 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- script to start before loading -->
+    <script>
+        // alert('Welcome to Tic-Tac-Toe!');
+        // pageloader
+        $(window).on("load", function () {
+            setTimeout(displayWindow, 3000);
+            function displayWindow() {
+                $("#loader-wrapper").fadeOut(1500);
+                setTimeout(introText, 2000);
+                function introText() {
+                    $("#intro-text").fadeIn(2000);
+                }
+            }
+        });
+    </script>
     <script src="./script.js"></script>
 </body>
 
