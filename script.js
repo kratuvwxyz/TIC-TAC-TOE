@@ -1,15 +1,28 @@
+// pageloader
+$(window).on("load", function () {
+    setTimeout(displayWindow, 3000);
+    function displayWindow() {
+        $("#loader-wrapper").fadeOut(1500);
+        setTimeout(introText, 2000);
+        function introText() {
+            $("#intro-text").fadeIn(2000);
+        }
+    }
+});
+
+
 // before we start, let's setup!
 
 let sign = 'X',
     disp = $('#player'),
     isko = "",
-    player1 = prompt('Who is player 1?'),
-    player2 = prompt('Who is player 2?'),
+    player1 = $('#playerOne').val(),
+    player2 = $('#playerTwo').val(),
     x = 0,
     o = 0;
 
 // if prompt is empty then use a default name
-if (player1 == "" || player2 == "" || player1 === player2 ) {
+if (player1 == "" || player2 == "" || player1 === player2) {
     player1 = "Player 1";
     player2 = "Player 2";
 }
