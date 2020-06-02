@@ -1,20 +1,64 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>Title</title>
+
+<head>
+    <title>Tic Tac Toe</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  </head>
-  <body>
-      
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body class="text-monospace text-center">
+    <h1 class="display-1">TIC TAC TOE</h1>
+    <h3 class="player">Let's Play!</h3>
+
+    <table>
+        <tbody>
+            <tr>
+                <td id="r1" onclick="printx('1')"></td>
+                <td id="r2" onclick="printx('2')"></td>
+                <td id="r3" onclick="printx('3')"></td>
+            </tr>
+            <tr>
+                <td id="r4" onclick="printx('4')"></td>
+                <td id="r5" onclick="printx('5')"></td>
+                <td id="r6" onclick="printx('6')"></td>
+            </tr>
+            <tr>
+                <td id="r7" onclick="printx('7')"></td>
+                <td id="r8" onclick="printx('8')"></td>
+                <td id="r9" onclick="printx('9')"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="d-flex justify-content-center">
+        <div class="flex-column m-3">
+            <span class="text-center player1">Player 1</span>: <span class="text-danger">X</span>
+            <br><b>Score: <span id="x" class="text-danger">0</span></b>
+        </div>
+        <div class="flex-column m-3">
+            <span class="text-center player2">Player 2</span>: <span class="text-danger">O</span>
+            <br><b>Score: <span id="o" class="text-danger">0</span></b>
+        </div>
+    </div>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
