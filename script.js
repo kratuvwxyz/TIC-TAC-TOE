@@ -9,7 +9,7 @@ let sign = 'X',
     o = 0;
 
 // if prompt is empty then use a default name
-if (player1 == "" && player2 == "" && player1 === player2) {
+if (player1 == "" || player2 == "" || player1 === player2 ) {
     player1 = "Player 1";
     player2 = "Player 2";
 }
