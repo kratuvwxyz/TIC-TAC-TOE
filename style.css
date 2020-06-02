@@ -58,18 +58,11 @@ td {
 }
 
 /* mediaQuery */
-@media only screen and (min-width: 720px) {
+@media only screen and (min-width: 1200px) {
     td {
         width: 150px;
         height: 150px;
         font-size: 90px;
-    }
-}
-@media only screen and (min-width: 1200px) {
-    td {
-        width: 200px;
-        height: 200px;
-        font-size: 120px;
     }
 }
 
