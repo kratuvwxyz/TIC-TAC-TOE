@@ -6,21 +6,31 @@ letsPlay = () => {
 
 let player1 = "",
     player2 = "";
-
-$('.nextPlayerTwo').click(() => {
-    $('.hidePlayerOne').hide();
-    $('.hidePlayerTwo').fadeIn(2000);
-    player1 = $('#playerOne').val();
-    console.log(player1);
     
+function hideThem (x, y, z, w) {
+
+	if(x == ""){
+		$('#'+y).toggleClass('shake');
+	} else {
+		$("."+z).hide();
+		$("."+w).fadeIn(2000);
+	}
+	
+	
+}
+    
+$(document).on('click', '.nextPlayerTwo', () => {
+	player1 = $('#playerOne').val();
+	hideThem (player1, "playerOne", "hidePlayerOne", "hidePlayerTwo");    
 });
 
+
+
 $('.nextShowGame').click(() => {
-    $('.hidePlayerTwo').hide();
-    $('.hideGame').fadeIn(2000);
-    player2 = $('#playerTwo').val();
-    console.log(player2);
-    gameUp();
+	
+	player2 = $('#playerTwo').val();
+	hideThem (player2, "playerTwo", "hidePlayerTwo", "hideGame"); 
+	gameUp();
 });
 
 // before we start, let's setup!
@@ -38,14 +48,14 @@ gameUp = () => {
     // else keep the name in the prompt
     $('.player1Name').text(player1);
     $('.player2Name').text(player2);
-    disp.text(`Let's Play! ${sign == 'X' ? player1 : player2}, it's your turn!`)
+    disp.html(`Let's Play! <span style="color:#dc3545;">${sign == 'X' ? player1 : player2}</span>, it's your turn!`)
     
     // main function 
     printx = (number) => {
         isko = $('#r' + number);
         // !(not) let throw an error if user want to add on something alrady typed
         if (!$(isko).html()) {
-            $(isko).text(sign).css('background-color', 'rgb(230, 230, 230)').css('color', 'black');
+            $(isko).text(sign).css('background-color', 'rgb(230, 230, 230)').css('color', 'black').css('cursor', 'grab');
             winner();//check if you win or not
             checksign();//change user
             $(disp).html(`<center><span style="color:#dc3545;"> ${sign == 'X' ? player1 : player2}</span>, it's your turn to play.</center>`);
@@ -83,7 +93,7 @@ gameUp = () => {
         isko = "";
         $(disp).html(`<center>Winner plays first! <span style="color:#dc3545;"> ${sign == 'X' ? player1 : player2}</span>, Your turn!</center>`)
         for (let i = 1; i < 10; i++) {
-            $('#r' + i).html("").css('background-color', 'rgb(187, 186, 186)');
+            $('#r' + i).html("").css('background-color', 'rgb(187, 186, 186)').css('cursor', 'grabbing');
         }
     }
     

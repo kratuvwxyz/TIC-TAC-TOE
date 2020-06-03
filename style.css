@@ -50,12 +50,51 @@ td {
                  0 5px 10px rgba(0,0,0,.25),
                  0 10px 10px rgba(0,0,0,.2),
                  0 20px 20px rgba(0,0,0,.15);
+                 cursor: grabbing;
 
+}
+
+td:active {
+	cursor: grab;
 }
 
 .player1Name, .player2Name {
     text-transform: capitalize;
 }
+
+@keyframes shake {
+  from,
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    border: 5px solid;
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0);
+  }
+}
+
+.shake {
+  -webkit-animation-name: shake;
+  animation-name: shake;
+  animation: shake;
+  animation-duration: 1s;
+}
+
 
 /* mediaQuery */
 @media only screen and (min-width: 1200px) {
