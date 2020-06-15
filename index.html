@@ -1,12 +1,57 @@
 <!doctype html>
-<html lang="en">
+
+<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+
+<html class="no-js" dir="ltr" lang="en-US"> <!--<![endif]-->
+
+<!--=============================================-->
+<!--=============================================-->
+<!--=============================================-->
+
+<!-- 
+    ╥╥  DESIGNED AND DEVELOPED BY...
+    ║║ 
+    ║║ ╓╓──╖╖ ╓╓──── ────╖╖ ╓╖ ╓╓──╖╖ ╓╓──╖╖ TM
+    ║║ ║║  ║║ ║║         ║║ ╙╜ ║║  ║║ ║║  ║║
+╓╓──╫╫ ╫╫──╜╜ ╙╙──╖╖ ╓╓──╫╫ ╖╖ ║║  ║║ ║║  ║║
+║║  ║║ ║║         ║║ ║║  ║║ ║║ ║║  ║║ ║║  ║║
+║║  ║║ ║║         ║║ ║║  ║║ ║║ ║║  ║║ ║║  ║║
+║║  ║║ ╙╙──── ────╜╜ ╙╙──╜╜ ║║ ╙╙──╫╫ ╜╜  ║║
+║║  ║║  .STUDIO             ║║     ║║     ╙╙ LLC
+╙╙──╜╜  SINCE TWENTYELEVEN  ╙╙─ ───╜╜
+    LLC © HTTPS://DESAIGN.APP
+    ALL RIGHTS RESERVED
+    --
+    Call: 1-860-DESAIGN
+    Mail: MEET@DESAIGN.STUDIO
+    Post: PO BOX 200001, AUSTIN TX 78720 
+    -->
 
 <head>
-    <title>Tic Tac Toe</title>
-    <!-- Required meta tags -->
+	
+    <!--:::::::::::::::::::::::::::::::::::::::
+  Required meta tags
+::::::::::::::::::::::::::::::::::::::::-->
+  
     <meta charset="utf-8">
+    <!--just for auto-refresh or redirect use the following meta tag-->
+    <meta http-equiv="refresh" content="60000" />
+    <!--<meta http-equiv="refresh" content="0; url=http://desaign.me" />-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!--mobile specific metas-->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!--basic page needs-->
+    <title>Tic-Tac-Toe</title>
+    <meta name="author" content="DÉSÃIGNER" />
+    <meta name="description" content="Désãign Studio welcomes the opportunity to work with you!"/> 
+    <meta name="keywords" content="Tic Tac Toe, Tic, Tac, Toe, Portfolio, Resume, Kratu, Desai, UI, UX, Designer, Developer, Full-stack, Visual, Graphic, Design, Website, Freelancer"/>
+    
+    <!--favicons-->
+    <link rel="icon" href="https://desaign.app/img/favicon.png" sizes="16x16 32x32" type="image/png">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -24,28 +69,27 @@
     <div id="intro-text">
         <div class="centerMiddle">
             <h5 class="text-muted">Welcome To The World Famous</h5>
-            <h1 class="display-4 text-monospace"><a href="index.html" class="text-warning text-decoration-none">TIC TAC
-                    TOE</a></h1>
-            <button class="btn btn-danger btn-large" onclick="letsPlay()">Let's Play</button>
+            <h1 class="display-4 text-monospace"><a href="index.html" class="text-warning text-decoration-none">TIC TAC TOE</a></h1>
+            <button class="btn btn-light btn-large" onclick="letsPlay()">Let's Play</button>
         </div>
 
     </div>
     <div class="centerMiddle">
         <div class="hidePlayerOne">
-            <label for="playerOne">Enter Player One Name for <strong>X</strong>:</label><br>
-            <input type="text" name="playerOne" id="playerOne" class="text-center p-1 mx-1 border-info h2" required><br>
-            <button class="btn btn-outline-info mt-3 nextPlayerTwo">NEXT ></button>
+            <label for="playerOne" class="h4 text-light">Enter Player One Name for <strong>X</strong>:</label><br>
+            <input type="text" name="playerOne" id="playerOne" class="text-center p-1 mx-1 border-info h2 textTransform" required><br>
+            <button class="btn btn-outline-light mt-3 nextPlayerTwo">NEXT ></button>
         </div>
         <div class="hidePlayerTwo">
-            <label for="playerTwo">Enter Player Two Name for <strong>O</strong>:</label><br>
-            <input type="text" name="playerTwo" id="playerTwo" class="text-center p-1 mx-1 border-info h2" required><br>
-            <button class="btn btn-outline-info mt-3 nextShowGame">NEXT ></button> 
+            <label for="playerTwo" class="h4 text-light">Enter Player Two Name for <strong>O</strong>:</label><br>
+            <input type="text" name="playerTwo" id="playerTwo" class="text-center p-1 mx-1 border-info h2 textTransform" required><br>
+            <button class="btn btn-outline-light mt-3 nextShowGame">NEXT ></button> 
         </div>
 
         <div class="hideGame">
 
 
-            <h5 id="player">Let's Play!</h5>
+            <h5 id="player" class="text-light">Let's Play!</h5>
 
             <table>
                 <tbody>
@@ -68,13 +112,13 @@
             </table>
 
             <div class="d-flex justify-content-center text-monospace">
-                <div class="flex-column m-3">
-                    <span class="text-center player1Name">Player 1</span>: <span class="text-danger">X</span>
-                    <br><b>Score: <span id="x" class="text-danger">0</span></b>
+                <div class="flex-column m-3 text-light">
+                    <span class="text-center player1Name h4">Player 1</span>: <span class="h3">X</span>
+                    <br><b class="h4">Score: <span id="x" class="h3">0</span></b>
                 </div>
-                <div class="flex-column m-3">
-                    <span class="text-center player2Name">Player 2</span>: <span class="text-danger">O</span>
-                    <br><b>Score: <span id="o" class="text-danger">0</span></b>
+                <div class="flex-column m-3 text-light">
+                    <span class="text-center player2Name h4">Player 2</span>: <span class="h3">O</span>
+                    <br><b class="h4">Score: <span id="o" class="h3">0</span></b>
                 </div>
             </div>
 
