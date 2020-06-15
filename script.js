@@ -1,6 +1,6 @@
 // display information
 letsPlay = () => {
-    $('#intro-text').hide();
+    $('#intro-text').fadeOut(2000);
     $('.hidePlayerOne').fadeIn(2000);
 }
 
@@ -46,9 +46,9 @@ console.log(player2);
 gameUp = () => {
     
     // else keep the name in the prompt
-    $('.player1Name').text(player1);
-    $('.player2Name').text(player2);
-    disp.html(`Let's Play! <span style="color:#dc3545;">${sign == 'X' ? player1 : player2}</span>, it's your turn!`)
+    $('.player1Name').text(player1).addClass('textTransform');
+    $('.player2Name').text(player2).addClass('textTransform');
+    disp.html(`Let's Play! <span style="color:#fff;" class="textTransform">${sign == 'X' ? player1 : player2}</span>, it's your turn!`)
     
     // main function 
     printx = (number) => {
@@ -58,7 +58,7 @@ gameUp = () => {
             $(isko).text(sign).css('background-color', 'rgb(230, 230, 230)').css('color', 'black').css('cursor', 'grab');
             winner();//check if you win or not
             checksign();//change user
-            $(disp).html(`<center><span style="color:#dc3545;"> ${sign == 'X' ? player1 : player2}</span>, it's your turn to play.</center>`);
+            $(disp).html(`<center><span style="color:#fff;" class="textTransform"> ${sign == 'X' ? player1 : player2}</span>, it's your turn to play.</center>`);
         } else {
             throw 'error';
         }
@@ -72,6 +72,11 @@ gameUp = () => {
     // return id value
     getbox = (number) => {
         return $('#r' + number).text();
+    }
+    
+    // return * value
+    starbox = (number) => {
+        return $('#r' + number).text('•').css('color', '#2a2a2a');
     }
     
     // if all are matching then return true (win) else false
@@ -91,7 +96,7 @@ gameUp = () => {
         $('#x').text(x);
         $('#o').text(o);
         isko = "";
-        $(disp).html(`<center>Winner plays first! <span style="color:#dc3545;"> ${sign == 'X' ? player1 : player2}</span>, Your turn!</center>`)
+        $(disp).html(`<center>Winner plays first! <span style="color:#fff;" class="textTransform"> ${sign == 'X' ? player1 : player2}</span>, Your turn!</center>`)
         for (let i = 1; i < 10; i++) {
             $('#r' + i).html("").css('background-color', 'rgb(187, 186, 186)').css('cursor', 'grabbing');
         }
@@ -108,13 +113,28 @@ gameUp = () => {
             checkmove(3, 6, 9, sign) ||
             checkmove(1, 5, 9, sign) ||
             checkmove(3, 5, 7, sign)) {
-            $(disp).html(`<center>Winner winner chicken dinner, <span style='color: #dc3545;'> ${sign == 'X' ? player1 : player2} wins.</span></center>`);
+            $(disp).html(`<center>Winner winner <span style='color: #fff;' class="textTransform"> ${sign == 'X' ? player1 : player2}</span> is the winner!</center>`);
+            
             // score
             sign == 'X' ? x++ : o++;
+            
+			// if it's empty then fill with some stuff so that user can't add more
+			if(getbox(1) == "") {starbox(1)}
+			if(getbox(2) == "") {starbox(2)}
+			if(getbox(3) == "") {starbox(3)}
+			if(getbox(4) == "") {starbox(4)}
+			if(getbox(5) == "") {starbox(5)}
+			if(getbox(6) == "") {starbox(6)}
+			if(getbox(7) == "") {starbox(7)}
+			if(getbox(8) == "") {starbox(8)}
+			if(getbox(9) == "") {starbox(9)}
+            
             // adding set time out for 3 sec. to see the final result
             setTimeout(reset, 3000);
+            
             // end of the game
             throw 'game over';
+            
         } else {
             if (getbox(1) != "" &&
                 getbox(2) != "" &&
