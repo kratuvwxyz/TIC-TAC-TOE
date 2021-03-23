@@ -40,9 +40,13 @@ Software:
     - Visual Studio Code Editor
     - Github for versioning
 
+Contributors:
+
+    - COC : https://github.com/kratuvwxyz/CONTRIBUTE
+
 License:
 
-    - MIT License
+    - MIT License : https://github.com/kratuvwxyz/LICENSE
 
 
 /* POWERED BY */

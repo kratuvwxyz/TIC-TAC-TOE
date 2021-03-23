@@ -26,11 +26,11 @@ In order to win the game, a player must place three of their marks in a horizont
 
 ### CONTRIBUTE
 
-- A [contributing guideline]('./CONTRIBUTE.md') available.
+- A [contributing guideline]('https://github.com/kratuvwxyz/CONTRIBUTE') available.
 
 ### LICENSE
 
-- [MIT]('./LICENSE.md') © 2021 Kratu Desai, DESAIGN LLC.
+- [MIT]('https://github.com/kratuvwxyz/LICENSE') © 2021 Kratu Desai, DESAIGN LLC.
 
 ## CONTACT
 
