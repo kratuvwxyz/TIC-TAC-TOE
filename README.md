@@ -1,25 +1,36 @@
-## Project title
+## Tic-Tac-Toe by Desaign Studio
 
-Descriptions
+Tic-tac-toe (American English), noughts and crosses (Commonwealth English and British English), or Xs and Os/“X’y O’sies” (Ireland), is a paper-and-pencil game for two players, X and O, who take turns marking the spaces in a 3×3 grid. The player who succeeds in placing three of their marks in a diagonal, horizontal, or vertical row is the winner.
+
+### Gameplay
+
+In order to win the game, a player must place three of their marks in a horizontal, vertical, or diagonal row. Score adds once player win the game.
 
 ### Version
 
-- **...**
-- Last Update: ...
+- **2103231153**
+- Last Update: 21/03/23
 
-### Standards
+### Framework
 
-- ...
+- HTML5, CSS3, JavaScript
 
-### Components
+### Built With
 
-- ...
+- JQuery, Bootstrap, Google Fonts, SVG
 
 ### Software
 
 - Visual Studio Code Editor
 - Github for versioning
 
+### CONTRIBUTE
+
+- A [contributing guideline]('./CONTRIBUTE.md') available.
+
+### LICENSE
+
+- [MIT]('./LICENSE.md') © 2021 Kratu Desai, DESAIGN LLC.
 
 ## CONTACT
 

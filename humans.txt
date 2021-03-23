@@ -12,32 +12,37 @@
     Location: Austin, Texas, USA
 
 							
-/* THANKS */
+/* CREDITS */
 
 							
-    • Desaign Studio
+    - Desaign LLC
     # https://humanstxt.org
     # https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json
 
                             
 /* SITE */
 
-    Version: ...
+Version:
 
-                            
-    Last update: ...
+    - 2103231153
+    ✔ Last Update @done (March 23rd 2021, 12:13)
 
-                                
-    Standards: ...
+Framework:
 
-                                
-    Components: ...
+    - HTML5, CSS3, JavaScript
 
-                                
-    Software: ...
+Built With:
 
+    - JQuery, Bootstrap, Google Fonts, SVG
 
-    Version Control: GitHub
+Software:
+
+    - Visual Studio Code Editor
+    - Github for versioning
+
+License:
+
+    - MIT License
 
 
 /* POWERED BY */
