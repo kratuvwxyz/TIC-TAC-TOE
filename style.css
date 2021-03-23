@@ -5,7 +5,7 @@ body {
 	background-size: cover;
 }
 
-#loader-wrapper, #intro-text{
+#intro-text{
     width: 100%;
     height: 100%;
     position: absolute;
@@ -112,19 +112,26 @@ td:active {
     }
 }
 
-/*  ╥╥  DESIGNED AND DEVELOPED BY...
-    ║║ 
-    ║║ ╓╓──╖╖ ╓╓──── ────╖╖ ╓╖ ╓╓──╖╖ ╓╓──╖╖ TM
-    ║║ ║║  ║║ ║║         ║║ ╙╜ ║║  ║║ ║║  ║║
-╓╓──╫╫ ╫╫──╜╜ ╙╙──╖╖ ╓╓──╫╫ ╖╖ ║║  ║║ ║║  ║║
-║║  ║║ ║║         ║║ ║║  ║║ ║║ ║║  ║║ ║║  ║║
-║║  ║║ ║║         ║║ ║║  ║║ ║║ ║║  ║║ ║║  ║║
-║║  ║║ ╙╙──── ────╜╜ ╙╙──╜╜ ║║ ╙╙──╫╫ ╜╜  ║║
-║║  ║║  .STUDIO             ║║     ║║     ╙╙ LLC
-╙╙──╜╜  SINCE TWENTYELEVEN  ╙╙─ ───╜╜
-    LLC © HTTPS://DESAIGN.APP
-    ALL RIGHTS RESERVED
-    --
-    Call: 1-860-DESAIGN
-    Mail: MEET@DESAIGN.STUDIO
-    Post: PO BOX 200001, AUSTIN TX 78720 */
+/*  
+        ╥╥  DESIGNED AND DEVELOPED BY...
+        ║║ 
+        ║║ ╓╓──╖╖ ╓╓──── ────╖╖ ╓╖ ╓╓──╖╖ ╓╓──╖╖ TM
+        ║║ ║║  ║║ ║║         ║║ ╙╜ ║║  ║║ ║║  ║║
+    ╓╓──╫╫ ╫╫──╜╜ ╙╙──╖╖ ╓╓──╫╫ ╖╖ ║║  ║║ ║║  ║║
+    ║║  ║║ ║║         ║║ ║║  ║║ ║║ ║║  ║║ ║║  ║║
+    ║║  ║║ ║║         ║║ ║║  ║║ ║║ ║║  ║║ ║║  ║║
+    ║║  ║║ ╙╙──── ────╜╜ ╙╙──╜╜ ║║ ╙╙──╫╫ ╜╜  ║║
+    ║║  ║║  HTTPS://DESAIGN.APP ║║     ║║     ╙╙ LLC
+    ╙╙──╜╜  SINCE TWENTYELEVEN  ╙╙─ ───╜╜
+            Copyright © 2021
+            ALL RIGHTS RESERVED
+            --
+            Call: 1-860-DESAIGN
+            Mail: MEET@DESAIGN.STUDIO
+            Post: PO BOX 200001, AUSTIN TX 78720
+            --
+            Book an appointment with us at
+            https://calendly.com/desaignstudio
+            --
+            Follow us: #desaignstudio
+*/
