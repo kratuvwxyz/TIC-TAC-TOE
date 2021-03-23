@@ -1,4 +1,4 @@
-![Desaign.Studio]('https://desaign.app/clients/cli/images/logo/desaign-background.png')
+![Desaign.Studio](https://desaign.app/clients/cli/images/logo/desaign-background.png)
 
 ## Tic-Tac-Toe by Desaign Studio
 
