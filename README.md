@@ -11,7 +11,7 @@ In order to win the game, a player must place three of their marks in a horizont
 ### Version
 
 - **2103231153**
-✔ Last Update @done (March 23rd 2021, 14:16)
+✔ Last Update @done (March 23rd 2021, 14:41)
 
 ### Framework
 
