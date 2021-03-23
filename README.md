@@ -4,6 +4,8 @@ Tic-tac-toe (American English), noughts and crosses (Commonwealth English and Br
 
 ### Gameplay
 
+<img src="./SS1.png" alt="Screen Shot" width="500">
+
 In order to win the game, a player must place three of their marks in a horizontal, vertical, or diagonal row. Score adds once player win the game.
 
 ### Version
