@@ -26,7 +26,7 @@ body {
     transform: translate(-50%, -50%);
 }
 
-#intro-text, .hidePlayerOne, .hidePlayerTwo, .hideGame {
+.hidePlayerOne, .hidePlayerTwo, .hideGame {
     display: none;
 }
 
