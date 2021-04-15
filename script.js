@@ -48,7 +48,7 @@ gameUp = () => {
         .css("color", "#ffffff"),
       !0)),
     (reset = () => {
-      $("#x").text(x), $("#o").text(o), (isko = ""), $(disp).html(`<center>Winner plays first! <span style="color:#fff;" class="textTransform"> ${"X" == sign ? player1 : player2}</span>, Your turn!</center>`);
+      (isko = ""), $(disp).html(`<center>Winner plays first! <span style="color:#fff;" class="textTransform"> ${"X" == sign ? player1 : player2}</span>, Your turn!</center>`);
       for (let e = 1; e < 10; e++)
         $("#r" + e)
           .html("")
@@ -56,7 +56,7 @@ gameUp = () => {
           .css("cursor", "grabbing");
     }),
     (winner = () => {
-      if (checkmove(1, 2, 3, sign) || checkmove(4, 5, 6, sign) || checkmove(7, 8, 9, sign) || checkmove(1, 4, 7, sign) || checkmove(2, 5, 8, sign) || checkmove(3, 6, 9, sign) || checkmove(1, 5, 9, sign) || checkmove(3, 5, 7, sign)) throw ($(disp).html(`<center>Winner winner <span style='color: #fff;' class="textTransform"> ${"X" == sign ? player1 : player2}</span> is the winner!</center>`), "X" == sign ? x++ : o++, "" == getbox(1) && starbox(1), "" == getbox(2) && starbox(2), "" == getbox(3) && starbox(3), "" == getbox(4) && starbox(4), "" == getbox(5) && starbox(5), "" == getbox(6) && starbox(6), "" == getbox(7) && starbox(7), "" == getbox(8) && starbox(8), "" == getbox(9) && starbox(9), setTimeout(reset, 3e3), "game over");
+      if (checkmove(1, 2, 3, sign) || checkmove(4, 5, 6, sign) || checkmove(7, 8, 9, sign) || checkmove(1, 4, 7, sign) || checkmove(2, 5, 8, sign) || checkmove(3, 6, 9, sign) || checkmove(1, 5, 9, sign) || checkmove(3, 5, 7, sign)) throw ($(disp).html(`<center>Winner winner <span style='color: #fff;' class="textTransform"> ${"X" == sign ? player1 : player2}</span> is the winner!</center>`), "X" == sign ? (x++, $("#x").text(x)) : (o++, $("#o").text(o)), "" == getbox(1) && starbox(1), "" == getbox(2) && starbox(2), "" == getbox(3) && starbox(3), "" == getbox(4) && starbox(4), "" == getbox(5) && starbox(5), "" == getbox(6) && starbox(6), "" == getbox(7) && starbox(7), "" == getbox(8) && starbox(8), "" == getbox(9) && starbox(9), setTimeout(reset, 3e3), "game over");
       if ("" != getbox(1) && "" != getbox(2) && "" != getbox(3) && "" != getbox(4) && "" != getbox(5) && "" != getbox(6) && "" != getbox(7) && "" != getbox(8) && "" != getbox(9)) throw ($(disp).html("<center>It's a tie. Play again</center>"), setTimeout(reset, 3e3), "it is a tie");
     });
 };
